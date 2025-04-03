@@ -1,0 +1,397 @@
+/* === Home Page Styling Enhancements === */
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #eef2f3, #8e9eab);
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  padding-top: 80px;
+}
+
+.home-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.home-container p em {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+/* Buttons for register + browse */
+.home-container button {
+  padding: 10px 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  background-color: #4f46e5;
+  color: white;
+  cursor: pointer;
+  margin: 10px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.home-container button:hover {
+  background-color: #3730a3;
+}
+
+input[type="text"],
+input[type="password"] {
+  padding: 8px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+@media (max-width: 600px) {
+  .home-container {
+    padding: 1rem;
+  }
+
+  .home-container h1 {
+    font-size: 2rem;
+  }
+
+  .home-container button {
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
+/* === Login Form Styling === */
+.login-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  height: 15px;
+  width: 160px;
+}
+
+.login-form button {
+  padding: 0 16px;
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 30px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.login-form button:hover {
+  background-color: #3730a3;
+}
+
+/* === Dashboard Improvements === */
+.dashboard-container {
+  background: linear-gradient(to right, #eef2f3, #8e9eab);
+  min-height: 100vh;
+  padding: 2rem;
+  text-align: center;
+}
+
+.dashboard-header {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.dashboard-header::before {
+  content: "\1F4E6";
+  font-size: 2rem;
+}
+
+.dashboard-welcome {
+  font-style: italic;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.logout-button {
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.logout-button:hover {
+  background-color: #3730a3;
+}
+
+.link-to-all {
+  color: #4f46e5;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.link-to-all:hover {
+  text-decoration: underline;
+}
+
+.item-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 1rem 0;
+}
+
+.item-form input,
+.item-form textarea {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  min-width: 180px;
+}
+
+.item-form button {
+  background-color: #4f46e5;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.item-form button:hover {
+  background-color: #3730a3;
+}
+
+.item-list h2 {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+}
+
+/* === Item Detail Styling === */
+.item-detail-container {
+  background: linear-gradient(to right, #eef2f3, #8e9eab);
+  min-height: 100vh;
+  padding: 2rem;
+  text-align: center;
+}
+
+.item-detail-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.item-name {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #111827;
+}
+
+.item-description {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 10px auto;
+  max-width: 600px;
+}
+
+.item-quantity {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0.5rem 0 1.5rem;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.edit-button,
+.delete-button,
+.back-button,
+.save-button,
+.cancel-button {
+  padding: 10px 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #4f46e5;
+  color: white;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.edit-button:hover,
+.save-button:hover,
+.back-button:hover {
+  background-color: #3730a3;
+}
+
+.delete-button {
+  background-color: #dc2626;
+}
+
+.delete-button:hover {
+  background-color: #b91c1c;
+}
+
+.cancel-button {
+  background-color: #6b7280;
+}
+
+.cancel-button:hover {
+  background-color: #4b5563;
+}
+
+.input-field,
+.textarea-field {
+  padding: 10px;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  min-width: 250px;
+}
+
+.textarea-field {
+  min-height: 100px;
+}
+
+/* === All Items Page Styling === */
+.all-items-container {
+  padding: 2rem;
+  background: linear-gradient(to right, #eef2f3, #8e9eab);
+  min-height: 100vh;
+  text-align: center;
+}
+
+.all-items-title {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.view-toggle {
+  margin: 1rem 0;
+}
+
+.view-toggle button {
+  margin: 0 5px;
+  padding: 8px 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  background-color: #4f46e5;
+  color: white;
+  cursor: pointer;
+}
+
+.view-toggle button.active {
+  background-color: #3730a3;
+}
+
+.items-list .item-card {
+  margin-bottom: 1.5rem;
+  text-align: left;
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.items-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.items-grid .item-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+  width: 280px;
+  padding: 1rem;
+  text-align: left;
+}
+
+.item-name {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #4f46e5;
+  text-decoration: none;
+}
+
+.item-name:hover {
+  text-decoration: underline;
+}
+
+/* === Register Page Styling === */
+.register-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #eef2f3, #8e9eab);
+  padding: 2rem;
+  padding-top: 80px;
+  text-align: center;
+}
+
+.register-title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.register-subtitle {
+  font-style: italic;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.register-form input {
+  padding: 10px;
+  margin: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 250px;
+}
+
+.register-form button {
+  background-color: #4f46e5;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.register-form button:hover {
+  background-color: #3730a3;
+}
