@@ -36,6 +36,10 @@ This app was built to fulfill the **ZPrefix CRUD assessment**, covering 10 full-
 ✅ Styled UI using custom CSS  
 ✅ API communication using fetch
 
+## 🚀 Deployment-Ready
+
+While this application has not been deployed, it is fully structured and configured for deployment. The project uses environment variables, dynamic API URLs, and separates client/server code — making it compatible with platforms like Vercel (for frontend) and Render or Railway (for backend).
+
 ---
 
 ## 🧑‍💻 Author
