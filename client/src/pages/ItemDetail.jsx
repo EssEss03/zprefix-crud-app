@@ -22,7 +22,7 @@ export default function ItemDetail() {
 
   if (!item) return <p>Loading...</p>;
 
-  // ✅ Step 2: Submit Updated Item
+  
   const handleUpdate = async () => {
     const res = await fetch(`${API}/items/${id}`, {
       method: 'PUT',
@@ -42,7 +42,7 @@ export default function ItemDetail() {
     }
   };
 
-  // ✅ Step 3: Delete Item
+  
   const handleDelete = async () => {
     if (confirm('Are you sure you want to delete this item?')) {
       const res = await fetch(`${API}/items/${id}`, {
