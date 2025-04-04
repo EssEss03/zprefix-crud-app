@@ -182,6 +182,12 @@ input[type="password"] {
   margin-top: 2rem;
 }
 
+.item-list ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
 /* === Item Detail Styling === */
 .item-detail-container {
   background: linear-gradient(to right, #eef2f3, #8e9eab);
